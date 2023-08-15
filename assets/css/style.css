@@ -224,7 +224,9 @@ article.active {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
-
+.text-white{
+  color:var(--white-2)
+}
 .h2,
 .h3,
 .h4,
