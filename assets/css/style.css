@@ -614,7 +614,23 @@ main {
   overflow: hidden;
 }
 
+.testimonials-text p {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
 
+.testimonials-text.expanded p {
+  -webkit-line-clamp: unset;
+  display: block;
+  overflow: visible;
+}
 /**
  * #testimonials-modal
  */

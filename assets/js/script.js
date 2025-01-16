@@ -157,3 +157,18 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const testimonialsText = document.querySelector(".testimonials-text");
+  const toggleButton = testimonialsText.querySelector(".toggle-text-btn");
+
+  toggleButton.addEventListener("click", () => {
+    testimonialsText.classList.toggle("expanded");
+
+    if (testimonialsText.classList.contains("expanded")) {
+      toggleButton.textContent = "Read Less";
+    } else {
+      toggleButton.textContent = "Read More";
+    }
+  });
+});
