@@ -613,7 +613,10 @@ main {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-
+.job-title {
+  font-weight: x-bold;
+  color: white;
+}
 .testimonials-text p {
   color: var(--light-gray);
   font-size: var(--fs-6);
@@ -1901,5 +1904,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 	 */
 
   .timeline-text { max-width: 700px; }
+
+  ul{
+
+    color: var(--white-1);
+  }
 
 }
