@@ -685,7 +685,7 @@ main {
   background: var(--eerie-black-2);
   position: relative;
   padding: 15px;
-  margin: 15px 12px;
+  margin: 800px 15px 12px;
   border: 1px solid var(--jet);
   border-radius: 14px;
   box-shadow: var(--shadow-5);
@@ -693,6 +693,19 @@ main {
   opacity: 0;
   transition: var(--transition-1);
   z-index: 2;
+}
+.testimonials-modal ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.testimonials-modal li::before {
+  content: "•";
+  color: var(--highlight-color, #0b5394); /* Optional color variable */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
 .modal-container.active .testimonials-modal {
