@@ -766,7 +766,8 @@
               <span>ASP.NET Core, Microservices, REST API</span>
               <ul class="timeline-text text-white">
                 <li>Architected secure backend logic for multi-mode transactions (sale, refund, cash advance).</li>
-                <li>Built and optimized <strong>RESTful APIs</strong> to support partner integrations and tokenization.</li>
+                <li>Built and optimized <strong>RESTful APIs</strong> to support partner integrations and tokenization.
+                </li>
                 <li>Implemented 3DS, custom encryption modules, and role-based authorization.</li>
               </ul>
             </li>
@@ -785,21 +786,16 @@
               <span>HTML, CSS, JavaScript</span>
               <ul class="timeline-text text-white">
                 <li>Built a responsive e-commerce website with cart and secure checkout functionality.</li>
-                <li>Implemented features like dynamic tax calculation, reward point system, and coupon-based discounts.</li>
+                <li>Implemented features like dynamic tax calculation, reward point system, and coupon-based discounts.
+                </li>
                 <li>Deployed via <strong>GitHub Pages</strong> using SEO-optimized HTML and semantic markup.</li>
               </ul>
             </li>
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Download</h4>
               <span>
-                <a 
-                  href="./assets/docs/Pranav_Bongane_Resume.pdf" 
-                  class="btn btn-primary" 
-                  title="Download my resume in PDF format" 
-                  download
-                  target="_blank"
-                  rel="noopener"
-                >
+                <a href="./assets/docs/Pranav_Bongane_Resume.pdf" class="btn btn-primary"
+                  title="Download my resume in PDF format" download target="_blank" rel="noopener">
                   📄 Download PDF Resume
                 </a>
               </span>
@@ -834,10 +830,7 @@
               <span>2024</span>
               <p class="timeline-text">
                 <a href="https://freecodecamp.org/certification/fcc3891b7cf-1e7b-4348-81ee-4bb7f35a9e0f/foundational-c-sharp-with-microsoft"
-                   class="cert-link"
-                   title="View Certificate on FreeCodeCamp"
-                   target="_blank"
-                   rel="noopener">
+                  class="cert-link" title="View Certificate on FreeCodeCamp" target="_blank" rel="noopener">
                   🎓 View Certificate
                 </a>
               </p>
@@ -847,26 +840,20 @@
               <span>2025</span>
               <p class="timeline-text">
                 <a href="https://app.cywareness.com/user/certificate/pci-awareness-for-point-of-sale-employees/27624"
-                   class="cert-link"
-                   title="🔒 Certificate is not publicly viewable. Available upon request."
-                   target="_blank"
-                   rel="noopener"
-                   disabled>
+                  class="cert-link" title="🔒 Certificate is not publicly viewable. Available upon request."
+                  target="_blank" rel="noopener" disabled>
                   🔐 View Certificate
                 </a>
               </p>
             </li>
-        
+
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">PCI General Awareness Training</h4>
               <span>2025</span>
               <p class="timeline-text">
                 <a href="https://app.cywareness.com/user/certificate/pci-general-awareness-training-2/27626"
-                   class="cert-link"
-                   title="🔒 Certificate is not publicly viewable. Available upon request."
-                   target="_blank"
-                   rel="noopener"
-                   disabled>
+                  class="cert-link" title="🔒 Certificate is not publicly viewable. Available upon request."
+                  target="_blank" rel="noopener" disabled>
                   🛡️ View Certificate
                 </a>
               </p>
@@ -1344,12 +1331,17 @@
             </div>
 
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
+            <div class="form-btns" style="gap: 1rem;">
+              <button type="button" class="form-btn btn-whatsapp" disabled data-form-btn  id="whatsappBtn" title="Send this message via WhatsApp">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+                <span>Send WhatsApp</span>
+              </button>
+            
+              <button class="form-btn" type="submit" disabled data-form-btn title="Send this message via email">
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </div>
           </form>
 
         </section>

@@ -172,3 +172,20 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+document.getElementById("whatsappBtn").addEventListener("click", function () {
+  const name = document.querySelector("input[name='fullname']").value.trim();
+  const email = document.querySelector("input[name='email']").value.trim();
+  const message = document.querySelector("textarea[name='message']").value.trim();
+
+  if (!name || !email || !message) {
+    alert("Please fill in all fields before sending via WhatsApp.");
+    return;
+  }
+
+  const phoneNumber = "919359238639"; // Replace with your own number
+  const whatsappMessage = `Hi Pranav,%0AI'm ${name} (%0AEmail: ${email})%0A%0A${message}`;
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+  window.open(whatsappURL, "_blank");
+});
