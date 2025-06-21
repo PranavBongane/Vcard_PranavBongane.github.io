@@ -128,25 +128,25 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="https://www.linkedin.com/in/pranav-bongane-375778253/" class="social-link">
+            <a href="https://www.linkedin.com/in/pranav-bongane-375778253/" class="social-link" target="_blank">
               <ion-icon class="socials-icons" name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://github.com/PranavBongane" class="social-link">
+            <a href="https://github.com/PranavBongane" class="social-link" target="_blank">
               <ion-icon class="socials-icons" name="logo-github"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="https://www.hackerrank.com/bonganepranav" class="social-link">
+            <a href="https://www.hackerrank.com/bonganepranav" class="social-link" target="_blank">
               <ion-icon class="socials-icons" name="extension-puzzle"></ion-icon>
             </a>
 
 
           <li class="social-item">
-            <a href="https://www.instagram.com/_prana99/" class="social-link">
+            <a href="https://www.instagram.com/_prana99/" class="social-link" target="_blank">
               <ion-icon class="socials-icons" name="logo-instagram"></ion-icon>
             </a>
           </li>
@@ -1325,21 +1325,28 @@
           <!-- <form action="mailto:pranav.bongane@outlook.com" method="post" enctype="text/plain" class="form" data-form> -->
           <form action="mailto:pranav.bongane@outlook.com" method="post" enctype="text/plain" class="form" data-form>
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required minlength="3"
+                pattern="[A-Za-z\s]{3,}"
+                title="Full name should be at least 3 characters long and contain only letters and spaces."
+                data-form-input>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Enter a valid email address."
+                data-form-input>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <textarea name="message" class="form-input" placeholder="Your Message" required minlength="10"
+              maxlength="500" title="Message should be between 10 and 500 characters." data-form-input></textarea>
             <div class="form-btns" style="gap: 1rem;">
-              <button type="button" class="form-btn btn-whatsapp" disabled data-form-btn  id="whatsappBtn" title="Send this message via WhatsApp">
+              <button type="button" class="form-btn btn-whatsapp" disabled data-form-btn id="whatsappBtn"
+                title="Send this message via WhatsApp">
                 <ion-icon name="logo-whatsapp"></ion-icon>
                 <span>Send WhatsApp</span>
               </button>
-            
+
               <button class="form-btn" type="submit" disabled data-form-btn title="Send this message via email">
                 <ion-icon name="paper-plane"></ion-icon>
-                <span>Send Message</span>
+                <span>Send Mail</span>
               </button>
             </div>
           </form>
