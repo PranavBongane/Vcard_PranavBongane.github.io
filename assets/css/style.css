@@ -1260,7 +1260,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
 
-
+a {
+  color: #00b4d8;
+}
+a:hover {
+  color: #48cae4;
+}
 
 
 
