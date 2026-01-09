@@ -3,14 +3,6 @@
 \*-----------------------------------*/
 
 
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -968,6 +960,52 @@ main {
  * skills 
  */
 
+
+
+.resume-block {
+  margin-bottom: 2rem;
+}
+
+.resume-block h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  color: var(--orange-yellow-crayola);
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.skill-tag {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.expert {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.advanced {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.strong {
+  background: #e8f5e9;
+  color: #388e3c;
+}
+
+.learning {
+  background: #fff3e0;
+  color: #f57c00;
+}
+
 .skills-title {
   margin-bottom: 20px;
 }
@@ -1363,15 +1401,35 @@ textarea.form-input::-webkit-resizer {
   border-color: var(--bittersweet-shimmer);
 }
 
+/* ---------- BUTTON GROUP ---------- */
+.form-btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+  /* CONTROL SPACE HERE */
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.form-btns div {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start
+}
+
+/* ---------- INDIVIDUAL BUTTON (your original design) ---------- */
 .form-btn {
   position: relative;
-  width: 100%;
+  min-width: 140px;
+  /* prevents shrinking */
   background: var(--border-gradient-onyx);
   color: var(--orange-yellow-crayola);
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
+  /* space between text & icon (if any) */
   padding: 13px 20px;
   border-radius: 14px;
   font-size: var(--fs-6);
@@ -1379,6 +1437,9 @@ textarea.form-input::-webkit-resizer {
   box-shadow: var(--shadow-3);
   z-index: 1;
   transition: var(--transition-1);
+  text-decoration: none;
+  /* for <a> tag */
+  white-space: nowrap;
 }
 
 .form-btn::before {
@@ -1395,6 +1456,7 @@ textarea.form-input::-webkit-resizer {
   font-size: 16px;
 }
 
+/* Hover states (unchanged) */
 .form-btn:hover {
   background: var(--bg-gradient-yellow-1);
 }
@@ -1403,12 +1465,11 @@ textarea.form-input::-webkit-resizer {
   background: var(--bg-gradient-yellow-2);
 }
 
-.form-btn:disabled {
+/* Disabled state (unchanged) */
+.form-btn:disabled,
+.form-btn:disabled:hover {
   opacity: 0.7;
   cursor: not-allowed;
-}
-
-.form-btn:disabled:hover {
   background: var(--border-gradient-onyx);
 }
 
@@ -1424,15 +1485,6 @@ a:hover {
   color: #48cae4;
 }
 
-.form-btns {
-  display: flex;
-  justify-content: flex-end;
-  /* aligns all buttons to the right */
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-top: 1.5rem;
-}
 
 
 
