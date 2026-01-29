@@ -741,63 +741,49 @@
         <!-- Skills -->
         <section class="skill">
           <h3 class="h3 skills-title">My Skills</h3>
+
           <div class="resume-block">
-            <h3>Core Competencies</h3>
+            <h4 class="h4">Core Backend & .NET</h4>
             <div class="skills-grid">
-              <span class="skill-tag expert">ASP.NET Core</span>
-              <span class="skill-tag expert">C#</span>
-              <span class="skill-tag advanced">Entity Framework</span>
-              <span class="skill-tag advanced">RESTful APIs</span>
-              <span class="skill-tag strong">Microservices</span>
-              <span class="skill-tag strong">SQL Server</span>
-              <span class="skill-tag strong">PCI-DSS</span>
-              <span class="skill-tag learning">Angular</span>
-              <span class="skill-tag learning">Go (Golang)</span>
-              <span class="skill-tag learning">AWS (Lambda, ECS)</span>
+              <span class="skill-tag expert">ASP.NET Core 6/7/8/9...</span>
+              <span class="skill-tag expert">C# (Modern Features)</span>
+              <span class="skill-tag expert">RESTful APIs & Minimal APIs</span>
+              <span class="skill-tag advanced">Entity Framework Core</span>
+              <span class="skill-tag advanced">SQL Server & Query Optimization</span>
             </div>
           </div>
-          <!-- <ul class="skills-list content-card">
 
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">ASP.NET Core</h5>
-                <data value="60">60%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-            </li>
+          <div class="resume-block">
+            <h4 class="h4">Architecture, Security & Fintech</h4>
+            <div class="skills-grid">
+              <span class="skill-tag expert">PCI-DSS Compliance</span>
+              <span class="skill-tag expert">3DS Authentication & Tokenization</span>
+              <span class="skill-tag strong">Microservices Basics</span>
+              <span class="skill-tag strong">Clean Architecture / Vertical Slice</span>
+              <span class="skill-tag strong">JWT + Refresh Tokens / H-MAC / Client-Secret / Policies</span>
+              <span class="skill-tag strong">Serilog + Structured Logging</span>
+              <span class="skill-tag strong">Caching (Redis) & Async Patterns</span>
+            </div>
+          </div>
 
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">C#</h5>
-                <data value="65">65%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-            </li>
+          <div class="resume-block">
+            <h4 class="h4">DevOps, Testing & Cloud (Growing)</h4>
+            <div class="skills-grid">
+              <span class="skill-tag strong">Docker & docker-compose</span>
+              <span class="skill-tag strong">Testing (xUnit, Integration, TestContainers)</span>
+              <span class="skill-tag learning">AWS (Lambda, API Gateway, ECS)</span>
+              <span class="skill-tag learning">CI/CD (GitHub Actions / Azure Pipelines)</span>
+            </div>
+          </div>
 
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">SQL</h5>
-                <data value="60">60%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-            </li>
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Microservices, REST API</h5>
-                <data value="60">60%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-            </li>
-
-          </ul> -->
+          <div class="resume-block">
+            <h4 class="h4">Frontend & Emerging Tech (Exploratory)</h4>
+            <div class="skills-grid">
+              <span class="skill-tag learning">Angular (SPA Integration)</span>
+              <span class="skill-tag learning">Go (Golang) for High-Perf Services</span>
+              <span class="skill-tag learning">ML.NET / AI Basics</span>
+            </div>
+          </div>
         </section>
         <br />
         <!-- Experience -->
@@ -808,22 +794,31 @@
           </div>
           <ol class="timeline-list">
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Software Engineer – Xchange Data Technology</h4>
-              <span>June 2022 — Present</span>
+              <h4 class="h4 timeline-item-title">.NET Backend Engineer – Xchange Data Technologies</h4>
+              <span>June 2022 — Present | Sangli, Maharashtra</span>
               <ul class="timeline-text text-white">
-                <li>Built <strong>PCI-compliant payment backend</strong> using <strong>ASP.NET Core</strong> and
-                  <strong>microservices</strong>
+                <li>Architected and built <strong>PCI-DSS compliant payment gateway backend</strong> using
+                  <strong>ASP.NET Core</strong>, <strong>microservices architecture</strong>, and secure integration
+                  patterns
                 </li>
-                <li>Reduced API response time by <strong>35%</strong> with async, caching, and <strong>Serilog</strong>
+                <li>Optimized API performance, reducing average response time by <strong>35%</strong> through
+                  async/await patterns, Redis caching, query tuning in EF Core, and structured logging with
+                  <strong>Serilog</strong>
                 </li>
-                <li>Automated onboarding & inventory — cut manual effort by <strong>40%</strong></li>
-                <li>Integrated with <strong>Shopify, WooCommerce, Magento</strong> via secure APIs and plugins</li>
-                <li>Designed <strong>3DS flow</strong> and <strong>tokenization</strong> for InterPay</li>
+                <li>Automated merchant onboarding and inventory management workflows, slashing manual effort by
+                  <strong>40%</strong> and improving operational efficiency
+                </li>
+                <li>Implemented secure e-commerce integrations with platforms including <strong>Shopify, WooCommerce,
+                    Magento</strong> via RESTful APIs, webhooks, and custom plugins</li>
+                <li>Designed and delivered <strong>3DS authentication flows</strong>, <strong>card
+                    tokenization</strong>, and encryption mechanisms for InterPay gateway to ensure compliance and
+                  security</li>
+                <li>Contributed to production reliability with resilient patterns (Polly), background processing, and
+                  observability improvements</li>
               </ul>
             </li>
           </ol>
         </section>
-
         <!-- Projects -->
         <section class="timeline">
           <div class="title-wrapper">
@@ -832,46 +827,82 @@
           </div>
           <ol class="timeline-list">
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Payment System – Backend Developer</h4>
-              <span>ASP.NET Core, Microservices, REST API</span>
+              <h4 class="h4 timeline-item-title">InterPay Payment Gateway – Production Backend (Fintech Core)</h4>
+              <span>ASP.NET Core 6–8, Microservices, EF Core, Redis, Serilog | Production at Xchange Data
+                Technologies</span>
               <ul class="timeline-text text-white">
-                <li>Architected secure backend logic for multi-mode transactions (sale, refund, cash advance).</li>
-                <li>Implemented <strong>3DS</strong>, <strong>tokenization</strong>, and <strong>custom
-                    encryption</strong></li>
-                <li>Built<strong>RESTful APIs</strong> to support partner integrations and tokenization.
+                <li>Orchestrated end-to-end secure transaction pipeline for multi-mode payments (sale, refund, cash
+                  advance),
+                  integrating 3DS authentication, card tokenization, and custom encryption to enforce PCI-DSS compliance
+                  across
+                  every layer.</li>
+                <li>Designed modular microservices architecture enabling independent scaling, fault isolation, and
+                  faster
+                  deployments while maintaining tight interplay between auth, token handling, and processing services.
                 </li>
-                <li>Optimized with <strong>Redis caching</strong> and <strong>async processing</strong></li>
-                <li>Live integrations with e-commerce platforms</li>
+                <li>Built high-throughput RESTful & Minimal APIs that seamlessly connect to e-commerce platforms
+                  (Shopify,
+                  WooCommerce, Magento) via custom plugins, webhooks, and Azure APIM, ensuring real-time, reliable
+                  partner
+                  integrations.</li>
+                <li>Achieved 35% reduction in API response time through optimized interplay of async processing, Redis
+                  caching
+                  layers, EF Core query tuning, and structured Serilog logging for production observability and
+                  debugging.</li>
+                <li>Implemented resilient patterns and background processing to handle production-scale transaction
+                  volumes,
+                  minimizing downtime and enhancing fraud/risk mitigation in live fintech environment.</li>
               </ul>
             </li>
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">ERP Web Application</h4>
-              <span>C#, LINQ, JavaScript, CSS</span>
+              <h4 class="h4 timeline-item-title">ERP Web Application – Fintech-Enabled Backend</h4>
+              <span>C#, ASP.NET Core, EF Core, LINQ, JavaScript</span>
               <ul class="timeline-text text-white">
-                <li>Developed modules for inventory, billing, and order management.</li>
-                <li>Integrated <strong>OTP-based login</strong> and implemented eCommerce workflows.</li>
+                <li>Developed integrated modules for inventory, billing, order management, and e-commerce workflows,
+                  with secure
+                  OTP-based authentication supporting fintech transaction flows.</li>
+                <li>Ensured efficient data interplay between modules using optimized LINQ queries and database patterns
+                  for
+                  reliable order-to-payment processing.</li>
               </ul>
             </li>
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">E-Commerce Website</h4>
-              <span>HTML, CSS, JavaScript</span>
+              <h4 class="h4 timeline-item-title">SHOPLANE – Responsive E-Commerce Frontend Demo</h4>
+              <span>HTML, CSS, JavaScript | Live: <a href="https://pranavbongane.github.io/SHOPLANE/"
+                  target="_blank">View
+                  Demo</a></span>
               <ul class="timeline-text text-white">
-                <li>Built a responsive e-commerce website with cart and secure checkout functionality.</li>
-                <li>Implemented features like dynamic tax calculation, reward point system, and coupon-based discounts.
+                <li>Built mobile-first e-commerce interface with cart, checkout simulation, dynamic tax/reward/coupon
+                  logic —
+                  complementary to backend payment integrations in production fintech systems.</li>
+                <li>Applied semantic HTML and SEO practices for optimal user experience in merchant-facing scenarios.
                 </li>
-                <li>Deployed via <strong>GitHub Pages</strong> using SEO-optimized HTML and semantic markup.</li>
               </ul>
             </li>
+
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Download</h4>
-              <span>
-                <a href="./assets/docs/Pranav_Bongane_Resume.pdf" class="btn btn-primary"
-                  title="Download my resume in PDF format" download target="_blank" rel="noopener">
-                  📄 Download PDF Resume
-                </a>
-              </span>
+              <h4 class="h4 timeline-item-title">ASP.NET Core Auth Samples – Secure Patterns Exploration</h4>
+              <span>ASP.NET Core, JWT, Refresh Tokens, Policies | GitHub: <a
+                  href="https://github.com/PranavBongane/aspnetcore-auth-samples" target="_blank">View Repo</a></span>
+              <ul class="timeline-text text-white">
+                <li>Created isolated demos showcasing JWT + refresh tokens, policy-based authorization, and external IdP
+                  flows —
+                  directly informed by production 3DS/tokenization interplay.</li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">ImageToText – AI Experiment with ML.NET</h4>
+              <span>ASP.NET Core, ML.NET | GitHub: <a href="https://github.com/PranavBongane/ImageToText"
+                  target="_blank">View
+                  Repo</a></span>
+              <ul class="timeline-text text-white">
+                <li>Developed image-to-text extraction prototype using ML.NET — exploring .NET AI for potential future
+                  fintech
+                  document processing use cases.</li>
+              </ul>
             </li>
           </ol>
         </section>
