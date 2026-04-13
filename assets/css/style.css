@@ -477,6 +477,15 @@ main {
   padding-left: 7px;
 }
 
+.social-list-contact {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  padding-bottom: 4px;
+  padding-left: 7px;
+}
+
 .social-item .social-link {
   color: var(--light-gray-70);
   font-size: 18px;
@@ -1622,6 +1631,7 @@ a:hover {
 
   .avatar-box img {
     width: 200px;
+    border-radius: 30px
   }
 
   .info-content .name {
@@ -2221,6 +2231,7 @@ a:hover {
 
   .avatar-box img {
     width: 200px;
+    border-radius: 30px
   }
 
   .info-content .name {
